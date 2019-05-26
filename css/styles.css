@@ -159,9 +159,9 @@ header {
 		height: 4px;
 		background: black;
     position:absolute;
-		width: 5vw;
-		left: calc(100vw - 70px);
-		-webkit-transition: 0.5s ease-in-out;
+		width: 30px;
+    right: 1em;
+    -webkit-transition: 0.5s ease-in-out;
 		-moz-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
@@ -226,7 +226,7 @@ header {
 
 .page > h1{
   margin-left: 1px;
-  font-size: 35px;
+  font-size: 28px;
   padding-bottom: 8px;
   font-family: Microsoft New Tai Lue;
   letter-spacing:  0.2em;
