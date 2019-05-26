@@ -112,7 +112,7 @@ header {
     display: block;
     position: fixed;
     height: 100vh;
-    width: 90vh;
+    width: 90vw;
     top: 0;
     right: 0;
     background-color: #fff;
@@ -139,6 +139,7 @@ header {
   .sp-list a {
     text-decoration: none;
     padding-left: 30px;
+    color: inherit;
   }
 
   .gnav__menu__item {
