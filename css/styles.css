@@ -14,14 +14,14 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 70px;
+    /* height: 70px; */
     vertical-align: middle;
 }
 
 .gnav{
   width: 95%;
   height: 100%;
-  margin:auto;
+  margin: 0.5em auto;
 }
 
 .site-logo{
@@ -29,27 +29,30 @@ header {
     width: auto;
     margin: auto;
     margin-left: 0;
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
 
 .gnav__menu{
     display: flex;
+    align-items: center;
 }
 
 .gnav__menu__item{
-    width: 10%;
+    /* width: 10%; */
     height: auto;
-    margin-top: 35px;
+    /* margin-top: 35px; */
+    margin-left: 4em;
   }
 
 .gnav__menu__item a{
+    padding: 1em 0;
     color: #333;
     text-decoration: none;
 }
 
 .gnav__menu__item__call{
   height: auto;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 .space{
@@ -178,7 +181,8 @@ header {
   .eyecatch{
     background-image: url("../img/eyecatch.png");
     background-position: 50% 50%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
     height: 698px;
     width: 100%;
     margin-bottom: 100px;
