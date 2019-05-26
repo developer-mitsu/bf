@@ -45,6 +45,7 @@ header {
   }
 
 .gnav__menu__item a{
+    padding: 1em 0;
     color: #333;
     text-decoration: none;
 }
