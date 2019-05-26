@@ -450,9 +450,7 @@ button > a{
   }
 
   .footer__address{
-    margin-top: 20px;
-    font-size: 16px;
-    line-height: 30px;
+    display: none;
   }
 
   .footer__box > .footer__list{
@@ -474,8 +472,9 @@ button > a{
   }
 
   .footer__twitter{
-    margin-top: 25px;
-    float: right;
+    /* margin-top: 25px;
+    float: right; */
+    display: none;
   }
 
   .copyright p{
