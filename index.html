@@ -8,6 +8,10 @@
     <link rel="icon" href="">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -20,12 +24,10 @@
                 <img src="img/header.png" alt="ブレイヴァリーフィールドのロゴ">
               </a>
 
-              <div id="nav_toggle">
-                <div>
+              <div id="js-open" class="nav_toggle">
                   <span></span>
                   <span></span>
                   <span></span>
-                </div>
               </div>
 
             </li>
@@ -34,13 +36,27 @@
             <li class="gnav__menu__item"><a href="recruit.html">採用情報</a></li>
             <li class="gnav__menu__item"><a href="about.html">会社情報</a></li>
             <li class="gnav__menu__item"><a href="contact.html">お問い合わせ</a></li>
-            <li class="gnav__menu__item__call"><a href="#"><img src="img/telephone.png" alt="電話番号"></a></li>
+            <li class="gnav__menu__item gnav__menu__item__call"><a href="#"><img src="img/telephone.png" alt="電話番号"></a></li>
           </ul>
         </nav>
-        <div class="space">
-        </div>
       </div>
     </header>
+    
+    <div class="bg-thin-grey">
+    </div>
+    <nav id="sp-nav-new">
+      <div class="close-btn">
+        <img src="img/btn_close.png" id="js-close" alt="" height="26px">
+      </div>
+      <ul class="sp-list">
+        <li><a href="service.html">事業概要</a></li>
+        <li><a href="performance.html">実績一覧</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="about.html">会社情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="#">電話する</a></li>
+      </ul>
+    </nav>
 
     <main>
       <div class="eyecatch">
@@ -154,5 +170,7 @@
           <p>Copyright © braveryfield, All rights reserved.<p>
         </div>
     </footer>
+    <script src="js/script.js">
+    </script>
   </body>
 </html>
