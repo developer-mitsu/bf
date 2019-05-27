@@ -296,16 +296,20 @@ button > a{
   .topbox{
     padding-top: 50px;
     padding-bottom: 50px;
+    border-right: 1px solid rgba(70,70,70,0.3);
   }
 
   .topbox img{
     margin-bottom: 70px;
   }
 
+  .smallbox.middle {
+    border-right: 1px solid rgba(70,70,70,0.3);
+  }
+
   .smallbox{
     padding-top: 50px;
     padding-bottom: 50px;
-    border-left: 1px solid rgba(70,70,70,0.3);
   }
 
   .smallbox img{
