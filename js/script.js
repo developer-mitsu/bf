@@ -12,4 +12,14 @@ $(function () {
             $('.bg-thin-grey').fadeOut('slow')
         }, 400);
     })
+
+    // setTimeout(function(){
+    //     $('#logo').fadeOut('slow');
+    // }, 4000)
+
+    AOS.init();
 });
+
+window.onload = function() {
+    $('#logo').fadeOut('slow');
+}
