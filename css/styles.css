@@ -592,19 +592,27 @@ header {
 .anav {
   list-style: none;
   display: flex;
+  justify-content: space-around;
+  height: 100%;
 }
 
-.anav li {
-  width: 33%;
+.anav a {
+  width: 100%;
+  height: 100%;
   text-align: center;
-  margin-top: 29px;
   letter-spacing:  0.2em;
-}
-
-.anav li a {
   text-decoration: none;
   color: #333;
+  line-height: 80px;
+  transition: all .4s ease-in-out 0s;
 }
+.anav a:hover {
+  color: white;
+  background: #000;
+}
+
+/* .anav li a {
+} */
 
 @media screen and (min-width:960px){
   .renovation__img{

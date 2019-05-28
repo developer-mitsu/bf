@@ -11,7 +11,18 @@ $(function () {
         setTimeout(function() {
             $('.bg-thin-grey').fadeOut('slow')
         }, 400);
-    })
+    });
+
+    $('.anav a').on('click', function(){
+        // クリックされたid名を取得
+        var getId = $(this).attr('href')
+        var targetTop = $(getId).offset().top;
+        $('html,body').animate({
+            scrollTop: targetTop
+        }, 500);
+        return false;
+    });
+
 
     // topへ戻るボタン
     var pagetop = $('#page_top');    
@@ -23,7 +34,7 @@ $(function () {
             pagetop.fadeOut();
         }
     });
-    pagetop.click(function () {
+    pagetop.on('click', function () {
         $('body,html').animate({
             scrollTop: 0
         }, 500); 
