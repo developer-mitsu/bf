@@ -256,10 +256,11 @@ header {
   letter-spacing:  0.2em;
 }
 
-button{
+.more-btn {
   margin-top: 50px;
   width:250px;
   height: 56px;
+  line-height: 56px;
   font-size:20px;
   text-decoration:none;
   display:block;
@@ -271,12 +272,12 @@ button{
   margin-right: auto;
 }
 
-button > a{
+/* button > a{
   text-decoration:none;
   color: #333;
   font-family: Microsoft New Tai Lue;
   letter-spacing:  0.2em;
-}
+} */
 
 @media screen and (min-width:960px){
   .box {
