@@ -13,6 +13,24 @@ $(function () {
         }, 400);
     })
 
+    // topへ戻るボタン
+    var pagetop = $('#page_top');    
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 150) {  
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); 
+        return false;
+    });
+
+
     // setTimeout(function(){
     //     $('#logo').fadeOut('slow');
     // }, 4000)
