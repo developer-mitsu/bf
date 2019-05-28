@@ -13,7 +13,7 @@ $(function () {
         }, 400);
     });
 
-    ページ内パススムーススクロール
+    // ページ内リンクのスムーススクロール
     $('.anav a').on('click', function(){
         // クリックされたid名を取得
         var getId = $(this).attr('href')
@@ -25,7 +25,7 @@ $(function () {
     });
 
 
-    // topへ戻るボタン
+    // ページ最上部へ戻るボタン
     var pagetop = $('#page_top');    
     pagetop.hide();
     $(window).scroll(function () {
