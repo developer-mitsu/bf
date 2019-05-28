@@ -1121,24 +1121,6 @@ header {
   }
 }
 
-.about__nav {
-  list-style: none;
-  display: flex;
-}
-
-.about__nav li {
-  width: 20%;
-  text-align: center;
-  margin-top: 29px;
-  letter-spacing:  0.2em;
-}
-
-.about__nav li a {
-  text-decoration: none;
-  color: #333;
-}
-
-
 @media screen and (min-width:960px){
   .message__img{
     margin-left: auto;

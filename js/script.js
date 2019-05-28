@@ -13,6 +13,7 @@ $(function () {
         }, 400);
     });
 
+    ページ内パススムーススクロール
     $('.anav a').on('click', function(){
         // クリックされたid名を取得
         var getId = $(this).attr('href')
