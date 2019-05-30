@@ -51,7 +51,7 @@ $(function () {
     }
 
     setTimeout(function(){
-        $('#logo').fadeOut('slow');
+        $('#logo').fadeOut(2000);
     }, 4000)
 
     AOS.init();
