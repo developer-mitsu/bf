@@ -44,9 +44,9 @@ $(function () {
 
 
     window.onload = function() {
-        $('.animation-target').addClass('active');
+        $('.Animation__target').addClass('active');
         setTimeout(function(){
-            $('.fadeIn-logo').fadeIn('slow');
+            $('.Animation__logo').addClass('active');
         }, 3000)
     }
 
