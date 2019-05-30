@@ -48,15 +48,17 @@ $(function () {
         setTimeout(function(){
             $('.Animation__logo').addClass('active');
         }, 3000)
+        setTimeout(function(){
+            $('#logo').fadeOut(2000);
+        }, 4000)
     }
-
-    setTimeout(function(){
-        $('#logo').fadeOut(2000);
-    }, 4000)
 
     AOS.init();
 });
 
 // window.onload = function() {
-//     $('#logo').fadeOut('slow');
+//     setTimeout(function(){
+//         $('#logo').fadeOut(2000);
+//     }, 4000)
+//     // $('#logo').fadeOut('slow');
 // }
