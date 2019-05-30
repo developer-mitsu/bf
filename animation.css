@@ -15,16 +15,25 @@
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width:960px) {
+  .Animation__wrapper {
+    width: 80%;
+  }
+}
+
 .Animation__target {
+    position: relative;
+    left: calc(-50vw + -100%);
     width: 50px;
     height: 50px;
     margin: 0 auto;
-    transform: translateX(calc(-50vw + -100%));
+    /* transform: translateX(calc(-50vw + -100%)); */
 }
 
 .Animation__target.active {
   transition: all 3s 0s ease-out;
-  transform: translateX(0) rotate(360deg) rotate(360deg);
+  left: 0;
+  transform: rotate(360deg) rotate(360deg);
   -webkit-transform: translateX(0) rotate(360deg) rotate(360deg);
   -moz-transform: translateX(0) rotate(360deg) rotate(360deg);
   -o-transform: translateX(0) rotate(360deg) rotate(360deg);
