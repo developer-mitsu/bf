@@ -3,7 +3,10 @@
   z-index: 9999;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   background: #fff;
+  /* -webkit-perspective: 500px;
+  perspective: 500px; */
 }
 
 .animation-target {
@@ -14,12 +17,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50vw + -100%), -50%)
+    transform: translate(calc(-50vw + -100%), -50%);
+    -webkit-transform: translate(calc(-50vw + -100%), -50%);
 }
 
 .animation-target.active {
   transition: all 3s 0s ease-out;
   transform: translate(-50%, -50%) rotate(360deg) rotate(360deg);
+  -webkit-transform: translate(-50%, -50%) rotate(360deg) rotate(360deg);
+  -moz-transform: translate(-50%, -50%) rotate(360deg) rotate(360deg);
+  -o-transform: translate(-50%, -50%) rotate(360deg) rotate(360deg);
+  -ms-transform: translate(-50%, -50%) rotate(360deg) rotate(360deg);
 }
 
 .fadeIn-logo{
@@ -28,7 +36,8 @@
   top: calc(50% + 50px);
   left: 50%;
   transform: translate(-50%, 0);
-  width: 30%;
+  -webkit-transform: translate(-50%, 0);
+  width: 20%;
 }
 
 .fadeIn-logo img {
