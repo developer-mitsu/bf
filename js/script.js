@@ -50,7 +50,7 @@ $(function () {
         }, 3000)
         setTimeout(function(){
             $('#logo').fadeOut(2000);
-        }, 4000)
+        }, 4)
     }
 
     AOS.init();
