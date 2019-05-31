@@ -379,140 +379,6 @@ header {
   margin-top: 124px;
 }
 
-@media screen and (min-width:960px){
-
-  footer{
-    /* height: 300px; */
-    background-color: #E3E3E3;
-  }
-
-  nav{
-    list-style: none;
-    overflow: hidden;
-  }
-
-  .footer__box{
-    display: flex;
-    justify-content: center;
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  .footer__logo img{
-    height: 50px;
-    width: auto;
-    margin-top: 50px;
-  }
-
-  .footer__address{
-    margin-top: 20px;
-    font-size: 16px;
-    line-height: 30px;
-  }
-
-  .footer__box > .footer__list{
-    width: 30%;
-  }
-
-  .footer__box > .footer__menu{
-    width: 20%;
-  }
-
-  .footer__list__menu{
-    margin-top: 50px;
-  }
-
-
-  .footer__list__menu a{
-    color: #333;
-    text-decoration: none;
-  }
-
-  .footer__twitter{
-    margin-top: 25px;
-    float: right;
-  }
-
-  .copyright p{
-    text-align: center;
-    padding: 50px 0;
-    /* margin-top: 50px; */
-  }
-
-}
-
-@media screen and (max-width:960px){
-  footer{
-    /* height: 300px; */
-    background-color: #E3E3E3;
-  }
-
-  nav{
-    list-style: none;
-    overflow: hidden;
-  }
-
-  .footer__box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .footer__logo img{
-    /* height: 50px; */
-    /* width: 50%; */
-    /* padding: auto; */
-    /* margin: 50px auto 0; */
-    /* margin-top: 50px; */
-  }
-
-  .footer__address{
-    display: none;
-  }
-
-  .footer__box > .footer__list{
-    /* width: 40%; */
-    width: 260px;
-    height: 50px;
-    margin: 50px auto 0;
-    /* width: 100%; */
-  }
-
-  .footer__box > .footer__menu{
-    /* width: 25%; */
-    /* display: flex; */
-    width: 80%;
-    margin-left: 10vw;
-    /* margin: auto; */
-    /* display: inline-block; */
-  }
-
-  .footer__list__menu{
-    /* margin-top: 50px; */
-    margin-top: 1em;
-    /* margin-left: 2em; */
-  }
-
-
-  .footer__list__menu a{
-    color: #333;
-    text-decoration: none;
-  }
-
-  .footer__twitter{
-    /* margin-top: 25px;
-    float: right; */
-    display: none;
-  }
-
-  .copyright p{
-    text-align: center;
-    margin-top: 50px;
-  }
-
-}
 
 .titleborder{
   width: 99px;
@@ -1434,7 +1300,7 @@ header {
   letter-spacing:  0.2em;
 }
 
-/* スクロールボタン */
+/* スクロールボタン
 #page_top{
   width: 70px;
   height: 70px;
@@ -1470,7 +1336,7 @@ header {
   opacity: 0.4;
   transition:all 0.3s ease-in-out 0s;
 }
-
+ */
 
 /*** レスポンシブデザイン ***/
 /* ~960px スマホ・タブレットサイズ */
