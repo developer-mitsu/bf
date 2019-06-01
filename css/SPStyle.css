@@ -39,35 +39,9 @@
 
   .sp-list a {
     display: block;
-    position: relative;
     text-decoration: none;
     padding-left: 30px;
     color: inherit;
-  }
-
-  .sp-list a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 100%;
-    background-color: #000;
-    transition: all 0.2 ease-out 0;
-  }
-
-  .sp-list a:hover {
-    color: #fff;
-  }
-
-  .sp-list a:hover::after {
-    width: 100%;
-    left: 0;
-    z-index: 5;
-    transition: all 0.2 ease-out 0;
   }
 
   .gnav__menu__item {
