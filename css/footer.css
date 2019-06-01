@@ -152,6 +152,6 @@ footer {
 
   .copyright p {
     text-align: center;
-    margin-top: 50px 0 10px;
+    padding: 50px 0 10px;
   }
 }
