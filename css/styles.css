@@ -309,9 +309,27 @@ iframe {
 }
 
 .gnav__menu__item a {
-  padding: 1em 0;
+  position: relative;
+  padding: 1em 0 0.5em;
   color: #333;
   text-decoration: none;
+}
+
+.gnav__menu__item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  transition: all 0.2s ease-out;
+  background-color: #000;
+}
+
+.gnav__menu__item a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .gnav__menu__item__call {
