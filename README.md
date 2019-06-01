@@ -5,8 +5,4 @@
 `
 @media screen and (max-width: 960px)
 `
-- 906pxから1100pxまで
-`
-@media screen and (max-width: 1100px)
-`
-- 1100px以上 -> default
+- 960px以上　-> default
