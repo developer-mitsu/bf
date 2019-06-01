@@ -315,7 +315,7 @@ iframe {
   text-decoration: none;
 }
 
-.gnav__menu__item a::after {
+.gnav__menu__item:not(:last-child) a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -381,12 +381,24 @@ iframe {
 }
 
 .eyecatch {
+  animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) 4.25s;
   background-image: url("../img/eyecatch.png");
   background-position: 50% 50%;
   background-size: cover;
   height: 698px;
   width: 100%;
   margin-bottom: 100px;
+}
+
+@keyframes img-wrap {
+  0% {
+    clip-path: circle(0 at 50% 50%);
+    -webkit-clip-path: circle(0 at 50% 50%);
+  }
+  100% {
+    clip-path: circle(100% at 50% 50%);
+    -webkit-clip-path: circle(100% at 50% 50%);
+  }
 }
 
 .eyecatch > h1 {
