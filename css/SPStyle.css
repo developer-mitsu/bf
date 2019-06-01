@@ -93,7 +93,7 @@
     color: #1d9000;
     text-align: center;
     padding-top: 200px;
-    font-family: "ＭＳ 明朝", serif;
+    font-family: "MS Mincho", "ＭＳ 明朝", serif;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
   }
 
@@ -116,6 +116,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
     border: 0;
+    width: 30%;
+    margin: 0 auto 2em;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
   }
 
   .topbox img {
@@ -131,7 +134,10 @@
   .smallbox {
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 30%;
+    margin: 0 auto 2em;
     border-top: 1px solid rgba(70, 70, 70, 0.3);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
   }
 
   .smallbox img {
