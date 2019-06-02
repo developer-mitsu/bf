@@ -42,7 +42,7 @@ $(function () {
         return false;
     });
 
-
+    // callバック用の関数
     function addActiveTarget(callback) {
         $('.Animation__target').addClass('active');
         callback;
@@ -53,11 +53,10 @@ $(function () {
         }, 3000);
         callback;
     }
-
     function fadeOutLogo() {
         setTimeout(function(){
             $('#logo').fadeOut(2000);
-        }, 4000);
+        }, 4);
     }
     window.onload = function() {
         // 次の処理を実行する時は確実に前の処理が終わったらにする=callback関数
@@ -66,10 +65,3 @@ $(function () {
 
     AOS.init();
 });
-
-// window.onload = function() {
-//     setTimeout(function(){
-//         $('#logo').fadeOut(2000);
-//     }, 4000)
-//     // $('#logo').fadeOut('slow');
-// }
