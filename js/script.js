@@ -43,14 +43,25 @@ $(function () {
     });
 
 
-    window.onload = function() {
+    function addActiveTarget(callback) {
         $('.Animation__target').addClass('active');
+        callback;
+    }
+    function addActiveLogo(callback) {
         setTimeout(function(){
             $('.Animation__logo').addClass('active');
-        }, 3000)
+        }, 3000);
+        callback;
+    }
+
+    function fadeOutLogo() {
         setTimeout(function(){
             $('#logo').fadeOut(2000);
-        }, 4)
+        }, 4000);
+    }
+    window.onload = function() {
+        // 次の処理を実行する時は確実に前の処理が終わったらにする=callback関数
+        addActiveTarget(addActiveLogo(fadeOutLogo()));
     }
 
     AOS.init();
