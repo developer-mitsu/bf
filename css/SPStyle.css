@@ -79,24 +79,24 @@
     top: 49px;
   }
 
-  .eyecatch {
+  /* .eyecatch {
     background-image: url("../img/eyecatch.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 400px;
     width: 100%;
     margin-bottom: 100px;
-  }
+  } */
 
-  .eyecatch > h1 {
+  /* .eyecatch > h1 { */
     /* font-size: 45px; */
-    font-size: 6vw;
+    /* font-size: 6vw;
     color: #1d9000;
     text-align: center;
     padding-top: 200px;
     font-family: "MS Mincho", "ＭＳ 明朝", serif;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
-  }
+  } */
 
   .boxContainer {
     display: flex;

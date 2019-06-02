@@ -54,8 +54,22 @@ $(function() {
     }, 3000);
     setTimeout(function() {
       $("#logo").fadeOut(2000);
-    }, 4000);
+    }, 0);
   };
+
+  /* スライドショー */
+  $slideTime = 8000;
+  $nowImage = 0;
+  $nextImage = 1;
+  setInterval(function(){
+    $numImage = $('.default').length;
+    $('.default').eq($nowImage).removeClass("appear");
+    $('.default').eq($nextImage).addClass("appear");
+    $nowImage = $nowImage != $numImage - 1 ? $nowImage + 1 : 0;
+    $nextImage = $nowImage + 1 == $numImage ? 0 : $nowImage + 1;
+
+    console.log('次はindex' + $nowImage + 'のimage画像です')
+  },$slideTime)
 
   AOS.init();
 });

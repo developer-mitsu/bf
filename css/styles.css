@@ -381,16 +381,43 @@ iframe {
 }
 
 .eyecatch {
-  animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) 4.25s;
-  background-image: url("../img/eyecatch.png");
+  position: relative;
+  /* animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) 4.25s; */
+  /* background-image: url("../img/eyecatch.png");
   background-position: 50% 50%;
   background-size: cover;
   height: 698px;
-  width: 100%;
-  margin-bottom: 100px;
+  width: 100%; */
+  margin-bottom: 100px; 
 }
 
-@keyframes img-wrap {
+.eyecatch .slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.eyecatch .slide img {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+}
+
+.default {
+  transition: opacity 5s ease 0s, transform 1s ease 4s;
+  opacity: 0;
+  transform: scale(2);
+}
+
+.default.appear {
+  transition: all 5s ease 0s;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* @keyframes img-wrap {
   0% {
     clip-path: circle(0 at 50% 50%);
     -webkit-clip-path: circle(0 at 50% 50%);
@@ -399,13 +426,18 @@ iframe {
     clip-path: circle(100% at 50% 50%);
     -webkit-clip-path: circle(100% at 50% 50%);
   }
-}
+} */
 
 .eyecatch > h1 {
+  position: absolute;
   font-size: 50px;
-  color: #1d9000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   text-align: center;
-  padding-top: 350px;
+  z-index: 5;
+  color: #1d9000;
   font-family: "ＭＳ 明朝", serif;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
 }
