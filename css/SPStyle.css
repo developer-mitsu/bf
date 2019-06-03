@@ -113,10 +113,7 @@
     font-size: 20px;
   }
 
-  .topbox {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border: 0;
+  .topbox, .middle, .smallbox {
     width: 60%;
     margin: 0 auto 2em;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
@@ -133,8 +130,6 @@
   }
 
   .smallbox {
-    padding-top: 50px;
-    padding-bottom: 50px;
     width: 60%;
     margin: 0 auto 2em;
     border-top: 1px solid rgba(70, 70, 70, 0.3);
