@@ -57,21 +57,42 @@ $(function() {
     }, 0);
   };
 
-  /* スライドショー */
-  $slideTime = 8000;
-  $nowImage = 0;
-  $nextImage = 1;
-  setInterval(function(){
-    $numImage = $('.default').length;
-    $('.default').eq($nowImage).removeClass("appear");
-    $('.default').eq($nextImage).addClass("appear");
-    $nowImage = $nowImage != $numImage - 1 ? $nowImage + 1 : 0;
-    $nextImage = $nowImage + 1 == $numImage ? 0 : $nowImage + 1;
+    // callバック用の関数
+    function addActiveTarget(callback) {
+        $('.Animation__target').addClass('active');
+        callback;
+    }
+    function addActiveLogo(callback) {
+        setTimeout(function(){
+            $('.Animation__logo').addClass('active');
+        }, 3000);
+        callback;
+    }
+    function fadeOutLogo() {
+        setTimeout(function(){
+            $('#logo').fadeOut(2000);
+        }, 4);
+    }
+    window.onload = function() {
+        // 次の処理を実行する時は確実に前の処理が終わったらにする=callback関数
+        addActiveTarget(addActiveLogo(fadeOutLogo()));
+    }
 
-    console.log('次はindex' + $nowImage + 'のimage画像です')
-  },$slideTime)
+    /* スライドショー */
+    $slideTime = 8000;
+    $nowImage = 0;
+    $nextImage = 1;
+    setInterval(function(){
+        $numImage = $('.default').length;
+        $('.default').eq($nowImage).removeClass("appear");
+        $('.default').eq($nextImage).addClass("appear");
+        $nowImage = $nowImage != $numImage - 1 ? $nowImage + 1 : 0;
+        $nextImage = $nowImage + 1 == $numImage ? 0 : $nowImage + 1;
 
-  AOS.init();
+        console.log('次はindex' + $nowImage + 'のimage画像です')
+    },$slideTime)
+
+    AOS.init();
 });
 
 // window.onload = function() {

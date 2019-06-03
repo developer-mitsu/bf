@@ -6,7 +6,7 @@
 
   #sp-nav-new.open {
     transform: translateX(0);
-    transition: all 0.3s ease-in-out 0.6s;
+    transition: all 0.3s ease-in-out 0.1;
   }
 
   #sp-nav-new {
@@ -19,11 +19,11 @@
     background-color: #fff;
     transform: translateX(50vw);
     transition: all 0.5s ease-in-out 0s;
-    z-index: 5;
+    z-index: 10;
   }
 
   .close-btn {
-    padding: 20px;
+    padding: 25px;
   }
 
   .sp-list {
@@ -44,6 +44,10 @@
     color: inherit;
   }
 
+  .gnav {
+    line-height: 790%;
+  }
+
   .gnav__menu__item {
     display: none;
   }
@@ -60,7 +64,7 @@
     height: 4px;
     background: black;
     position: absolute;
-    width: 30px;
+    width: 35px;
     right: 1em;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
@@ -68,15 +72,15 @@
   }
 
   .nav_toggle span:nth-child(1) {
-    top: 23px;
+    top: 30px;
   }
 
   .nav_toggle span:nth-child(2) {
-    top: 36px;
+    top: 45px;
   }
 
   .nav_toggle span:nth-child(3) {
-    top: 49px;
+    top: 60px;
   }
 
   /* .eyecatch {
