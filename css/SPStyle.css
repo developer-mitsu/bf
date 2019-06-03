@@ -48,6 +48,10 @@
     line-height: 790%;
   }
 
+  .site-logo {
+    margin-left: 1vw;
+  }
+
   .gnav__menu__item {
     display: none;
   }
