@@ -71,7 +71,7 @@ $(function() {
     function fadeOutLogo() {
         setTimeout(function(){
             $('#logo').fadeOut(2000);
-        }, 4);
+        }, 4000);
     }
     window.onload = function() {
         // 次の処理を実行する時は確実に前の処理が終わったらにする=callback関数
