@@ -13,11 +13,11 @@
     display: block;
     position: fixed;
     height: 100vh;
-    width: 90vw;
+    width: 50vw;
     top: 0;
     right: 0;
     background-color: #fff;
-    transform: translateX(90vw);
+    transform: translateX(50vw);
     transition: all 0.5s ease-in-out 0s;
     z-index: 5;
   }
@@ -38,6 +38,7 @@
   }
 
   .sp-list a {
+    display: block;
     text-decoration: none;
     padding-left: 30px;
     color: inherit;
@@ -78,24 +79,24 @@
     top: 49px;
   }
 
-  .eyecatch {
+  /* .eyecatch {
     background-image: url("../img/eyecatch.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 400px;
     width: 100%;
     margin-bottom: 100px;
-  }
+  } */
 
-  .eyecatch > h1 {
+  /* .eyecatch > h1 { */
     /* font-size: 45px; */
-    font-size: 6vw;
+    /* font-size: 6vw;
     color: #1d9000;
     text-align: center;
     padding-top: 200px;
-    font-family: "ＭＳ 明朝", serif;
+    font-family: "MS Mincho", "ＭＳ 明朝", serif;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
-  }
+  } */
 
   .boxContainer {
     display: flex;
@@ -116,6 +117,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
     border: 0;
+    width: 60%;
+    margin: 0 auto 2em;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
   }
 
   .topbox img {
@@ -131,7 +135,10 @@
   .smallbox {
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 60%;
+    margin: 0 auto 2em;
     border-top: 1px solid rgba(70, 70, 70, 0.3);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
   }
 
   .smallbox img {
