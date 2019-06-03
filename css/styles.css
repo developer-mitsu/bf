@@ -12,6 +12,12 @@ header {
   /* overflow: hidden; */
 }
 
+section.top-page {
+  position: relative;
+  width: var(--section-width);
+  margin: auto;
+}
+
 /*** レスポンシブデザイン -> 外部cssへ ***/
 /*************************************
 *************** ~1100px **************
@@ -24,9 +30,6 @@ header {
   display: flex;
   margin-top: 18.5px;
   justify-content: center;
-  width: var(--section-width);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .boxContainer h3 {
@@ -387,13 +390,8 @@ iframe {
 
 .eyecatch {
   position: relative;
-  /* animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) 4.25s; */
-  /* background-image: url("../img/eyecatch.png");
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 698px;
-  width: 100%; */
-  margin-bottom: 100px; 
+  width: var(--section-width);
+  margin: 0 auto 100px; 
 }
 
 .eyecatch .slide {
@@ -449,29 +447,42 @@ iframe {
 
 .page {
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 8.6vw;
+}
+
+.special-padding.page {
+  padding-bottom: 10.5vw;
 }
 
 .page > h1 {
   margin-left: 1px;
-  font-size: 28px;
+  font-size: 3.9vw;
   padding-bottom: 8px;
-  font-family: Microsoft New Tai Lue;
+  font-family: serif;
   letter-spacing: 0.2em;
+}
+
+.page .section-title-new {
+  position: relative; 
+  top: -0.5em;
+  padding-top: 0;
+}
+
+.page .section-title-new + h2 {
+  margin-top: 0;
 }
 
 .border {
   width: 45px;
   border-bottom: 1px solid rgba(70, 70, 70, 0.3);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 3em auto 0;
 }
 
 .page > h2 {
   margin-left: 1px;
-  font-size: 25px;
-  padding-top: 52px;
-  font-family: "Yu Mincho", "YuMincho";
+  font-size: 1.7vw;
+  margin-top: 1em;
+  font-family: serif;
   letter-spacing: 0.2em;
 }
 
