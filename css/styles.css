@@ -1,3 +1,7 @@
+:root {
+  --section-width: 90%;
+}
+
 body {
   font-family: "ＭＳ ゴシック", sans-serif;
   position: relative;
@@ -12,24 +16,6 @@ header {
 /*************************************
 *************** ~1100px **************
 *************************************/
-/* .eyecatch{
-    background-image: url("../img/eyecatch.png");
-    background-position: 50% 50%;
-    background-size: cover;
-    height: 698px;
-    width: 100%;
-    margin-bottom: 100px;
-  }
-  
-  .eyecatch > h1{
-    font-size: 50px;
-    color: #1D9000;
-    text-align: center;
-    padding-top: 350px;
-    font-family: "ＭＳ 明朝",serif;
-    text-shadow: 5px 5px 10px rgba(0,0,0,0.16);
-  } */
-
 .box {
   width: 100%;
 }
@@ -38,7 +24,7 @@ header {
   display: flex;
   margin-top: 18.5px;
   justify-content: center;
-  width: 75%;
+  width: var(--section-width);
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,36 +33,55 @@ header {
   font-size: 20px;
 }
 
+.servise__box .servise__title__wrapper {
+  background-color:rgba(5,5,5,0.6);
+  position: relative;
+  width: 100%;
+  height: inherit;
+  letter-spacing: 0.2em;
+}
+
+.servise__box .servise-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: serif;
+}
+
+.servise__box .servise-subtitle {
+  display: block;
+  font-size: 0.5em;
+}
+
+
 .topbox {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-right: 1px solid rgba(70, 70, 70, 0.3);
+  background-image: url("../img/servise-img/painter-1246619_1920.jpg");
+  background-position: 40% 45%;
+  background-size: 250% auto;
+  width: 100%;
+  height: 182px;
 }
 
-.topbox img {
-  margin-bottom: 70px;
-}
-
-.smallbox.middle {
-  border-right: 1px solid rgba(70, 70, 70, 0.3);
+.middle {
+  background-image: url("../img/servise-img/team-3373638_1920.jpg");
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 182px;
 }
 
 .smallbox {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.smallbox img {
-  margin-bottom: 70px;
-}
-
-.service__img {
-  background-image: url("../img/about.png");
-  height: 350px;
+  background-image: url("../img/servise-img/checklist-2077020_1920.jpg");
+  background-position:  50% 50%;
   background-size: cover;
-  background-position: 50% 50%;
   width: 100%;
+  height: 182px;
 }
+
 
 .service__menu {
   width: 77%;
@@ -484,18 +489,9 @@ iframe {
 }
 
 .boxContainer > div {
-  width: 30%;
+  width: 33.333%;
 }
 
-.topbox,
-.middle {
-  border-right: 1px solid rgba(70, 70, 70, 0.3);
-}
-
-.topbox > img,
-.smallbox > img {
-  margin-bottom: 50px;
-}
 
 .more-btn {
   margin-top: 50px;
